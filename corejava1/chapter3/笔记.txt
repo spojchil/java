@@ -40,4 +40,40 @@ Math类，的如果一个计算溢出,数学运算符只是返回错误结果
 而没有任何提醒
 允许使用+连接两个字符串
 
-3.6.1 字串
+3.6.1 子串
+
+String geeting = "Hello";
+greeting.substring(0, 3);
+返回一个"Hel" 
+可以使用+连接连接有一个字符串和非字符串
+后者会被转化为字符串
+String.join(" / ", "S", "M", "L")
+可以将多个字符串连接，中间使用 / 分割
+字符串重复
+String repeated = "Java“.repeat(3);
+repeated ==> "JavaJavaJava"
+
+检测字符串是否想等equals
+
+3.6.9
+
+字符串构建器
+StringBuilder builder = new StringBuilder();
+
+builder.append(ch); // 增加单个字符
+builder.append(str);  // 一个字符串
+
+String completedString = builder.toString();
+得到String1
+类似的类StringBuffer 效率不如StringBuilde
+但是前者采用多线程操作字符串
+
+3.8.5 多重选择switch 四种
+
+3.8.6 中断控制流程的语句
+
+break
+和带标签的break
+标签，必须放在你想跳出的最外层循环之前，并且紧跟一个冒号
+可以跳出语句块，而不能跳入
+也有continue
