@@ -77,3 +77,12 @@ break
 标签，必须放在你想跳出的最外层循环之前，并且紧跟一个冒号
 可以跳出语句块，而不能跳入
 也有continue
+
+
+3.10
+
+数组排序
+可以使用类Arrays中的sort
+int[] a = new int [10000];
+
+Arrays.sort(a)
